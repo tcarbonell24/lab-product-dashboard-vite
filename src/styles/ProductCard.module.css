@@ -1,3 +1,29 @@
-/* TODO: Style the product card container */
+.card {
+  border: 2px solid #4caf50;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background-color: #f9fff9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-/* TODO: Add special styling for out-of-stock products */
+/* Define global class outOfStockClass for the test */
+:global(.outOfStockClass) {
+  border: 2px solid gray;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #999;
+  font-style: italic;
+}
+
+.inStock {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.outOfStockLabel {
+  color: #b71c1c;
+  font-weight: bold;
+}
